@@ -1307,14 +1307,14 @@ body {
   background-color: transparent;
 }
 .main-header .container {
-  max-width: 98vw !important;
+  max-width: 80vw !important;
   flex-wrap: nowrap !important;
 }
 .main-header .container .navbar-header {
   width: 10vmax !important;
 }
 .main-header .container .navbar-collapse {
-  width: 82vmax !important;
+  width: 70vmax !important;
   flex-basis: 90% !important;
 }
 .main-header .container .navbar-collapse .navbar-nav {

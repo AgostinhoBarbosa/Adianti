@@ -20,7 +20,6 @@ define('APPLICATION_NAME', $ini['general']['application']);
 define('OS', strtoupper(substr(PHP_OS, 0, 3)));
 define('PATH', dirname(__FILE__));
 define('LANG', $ini['general']['language']);
-define('EMPRESA', $ini['general']['empresa']);
 
 // custom session name
 session_name('PHPSESSID_'.$ini['general']['application']);

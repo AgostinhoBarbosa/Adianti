@@ -56,7 +56,7 @@ class ApplicationMenuEditorItemRenderer extends TElement
      */
     public function setMenu(ApplicationMenuEditorRenderer $menu)
     {
-        $this->{'class'} = 'dropdown';
+        $this->{'class'} = 'dropdown-submenu';
         $this->menu = $menu;
     }
     

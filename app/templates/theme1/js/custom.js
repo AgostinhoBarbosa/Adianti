@@ -105,8 +105,8 @@ function __adianti_load_html(content, afterCallback, url) {
             }
         }
     }
-
-    if (match_container == null && content.indexOf('<script language=') == 0){
+    
+    if (match_container == null && content.indexOf('<script language=') == 0 && content.indexOf('widget="TWindow"') == 0){
         content = content.replace(new RegExp("<script language='JavaScript'>", 'g'), '');
         content = content.replace(new RegExp("</script><div></div>", 'g'), '');
         content = content.replace(new RegExp('__adianti_error', 'g'), '');
@@ -120,7 +120,6 @@ function __adianti_load_html(content, afterCallback, url) {
         }
         return;
     }
-
     if (match_container !== null) {
         if (match_container[1] !== 'EmptyPage') {
             $('#app-content-tab').show();
